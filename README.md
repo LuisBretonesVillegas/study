@@ -1,6 +1,6 @@
 # study.luisbretones.dev
 
-Study plans and practice tests for my Computer Engineering degree, served as plain static HTML with GitHub Pages.
+Practice tests for my Computer Engineering degree, served as plain static HTML with GitHub Pages.
 
 Each page lives in its own folder as a self-contained `index.html`.
 
