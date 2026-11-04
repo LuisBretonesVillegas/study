@@ -344,7 +344,7 @@ function renderHome(){
       <p>${window.EMBEDDED ? `Mis apuntes para el examen de IP: análisis de exámenes, resúmenes, fichas de POO, ejercicios y simulacros. Actualizado el ${new Date(window.EMBEDDED.built).toLocaleDateString("es-ES",{day:"numeric",month:"long",year:"numeric"})}.` : "Todo lo que escribo en el IDE, organizado por secciones. Se actualiza solo cada vez que guardo un archivo."}</p>
       <div class="btns">${sims.map((d,i)=>`<a class="btn ${i?"ghost":"solid"}" href="#/${d.key}">${esc(d.title.replace(/:.*/,""))} →</a>`).join("")}</div>
     </div>
-    <div class="block"><div class="eyebrow">Por dónde // empezar</div>
+    <div class="block"><div class="eyebrow">Inicio // Por dónde empezar</div>
       <div class="steps">${steps.map(([d,why])=>`<a href="#/${d.key}"><div><b>${esc(d.title)}</b><small>${why}</small></div><span class="go">Leer →</span></a>`).join("")}</div>
     </div>
     <div class="block"><div class="eyebrow">Secciones</div>
