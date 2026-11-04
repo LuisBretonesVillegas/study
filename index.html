@@ -4,14 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Study | Luis Bretones</title>
-<meta name="description" content="Practice tests for my Computer Engineering degree.">
+<meta name="description" content="Study guides and practice tests for my Computer Engineering degree.">
 <meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>
   :root { --bg: #f5f0e8; --text: #111111; --muted: #6b7280; --accent: #1a5c00; --border: #e5e7eb; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
-  main { max-width: 720px; margin: 0 auto; padding: 4rem 1.25rem; }
+  main { max-width: 960px; margin: 0 auto; padding: 4rem 1.25rem; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem; }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
   h1 { font-size: 2.25rem; margin-bottom: 0.5rem; }
   .intro { color: var(--muted); line-height: 1.6; margin-bottom: 2.5rem; }
   .intro a { color: var(--accent); }
@@ -26,14 +28,25 @@
 <body>
 <main>
   <h1>Study</h1>
-  <p class="intro">Practice tests for my Computer Engineering degree. My portfolio lives at <a href="https://luisbretones.dev">luisbretones.dev</a>.</p>
+  <p class="intro">Study guides and practice tests for my Computer Engineering degree. My portfolio lives at <a href="https://luisbretones.dev">luisbretones.dev</a>.</p>
 
+  <div class="cols">
+  <section>
+  <h2>Study guides</h2>
+  <ul>
+    <li><a href="/IP/">Apuntes IP · Java<span>Introduction to Programming: exam analysis, summaries and mock exams</span></a></li>
+  </ul>
+  </section>
+
+  <section>
   <h2>Practice tests</h2>
   <ul>
     <li><a href="/SSII/">Test de teoría SSII<span>Intelligent Systems</span></a></li>
     <li><a href="/SSOO/">Test de teoría SSOO<span>Operating Systems</span></a></li>
     <li><a href="/pgpi/">PGPI Práctica Test<span>Software project planning and management</span></a></li>
   </ul>
+  </section>
+  </div>
 </main>
 </body>
 </html>
