@@ -19,7 +19,7 @@
     --warn: #f59e0b;
     --warn-dim: #451a03;
     --text: #e2e8f0;
-    --text-muted: #64748b;
+    --text-muted: #808fa4;
     --text-dim: #94a3b8;
     --repeat-badge: #7c3aed;
     --repeat-badge-dim: #2e1065;
@@ -104,7 +104,7 @@
     justify-content: center;
     background: var(--surface2);
     color: var(--text-dim);
-    font-size: 11px;
+    font-size: 12px;
     border-radius: 999px;
     padding: 0 6px;
     min-width: 20px;
@@ -166,7 +166,7 @@
     gap: 12px;
   }
   .q-num {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     color: var(--text-muted);
     min-width: 28px;
@@ -185,7 +185,7 @@
     margin-top: 8px;
   }
   .badge {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1678,12 +1678,12 @@ function renderSection() {
   `;
 
   if (repeated.length > 0) {
-    html += `<div class="subsection-title"><span class="badge repeat" style="font-size:11px;padding:3px 10px;">Preguntas repetidas en exámenes</span></div>`;
+    html += `<div class="subsection-title"><span class="badge repeat" style="font-size:12px;padding:3px 10px;">Preguntas repetidas en exámenes</span></div>`;
     repeated.forEach((q, i) => { html += renderQuestion(q, i + 1); });
   }
 
   if (unique.length > 0) {
-    html += `<div class="subsection-title"><span class="badge unique" style="font-size:11px;padding:3px 10px;">Preguntas que no se han repetido</span></div>`;
+    html += `<div class="subsection-title"><span class="badge unique" style="font-size:12px;padding:3px 10px;">Preguntas que no se han repetido</span></div>`;
     unique.forEach((q, i) => { html += renderQuestion(q, repeated.length + i + 1); });
   }
 
